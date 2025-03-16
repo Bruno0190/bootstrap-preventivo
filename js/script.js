@@ -37,7 +37,13 @@ function quote(event) {
                 finalCost = (initialCost - discount).toFixed(2);
             }
         }
-        document.getElementById("cost").innerHTML = finalCost + "€";
+
+        const Decimal = finalCost.slice(4);
+        const Integer = parseInt(finalCost);
+
+        document.getElementById("cost").innerHTML = 
+        `<span style="font-weight: bold; font-size:30px">€ ${Integer}</span><span style="color: grey; font-size:28px">,${Decimal}</span>`;
+    
     } else {
         alert("Si prega di accettare la Privacy Policy");
     }
