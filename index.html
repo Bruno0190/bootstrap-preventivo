@@ -11,47 +11,41 @@
 </head>
 
 <body>
-  <header >
-    <nav class="navbar navbar-expand-lg bg-dark px-5 mx-6" style="height: 80px" data-bs-theme="dark">
-      <div class="container-fluid">
-        <!-- Navbar brand -->
-        <a class="navbar-brand" href="#">
-        </a>
-        <!-- Qui c'era il menu hamburger cancellato     -->
-        <!-- Menu di navigazione -->
-        <div class="navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-4 mb-2 mb-lg-0 ">
-            <li class="nav-item">
-              <a class="nav-link active fs-4" aria-current="page" href="#">Bool Factory</a>
-            </li>
-          </ul>
-          <!-- Ho individuato due diversi tag <ul> per usare d-flex justify-content-between -->
-          <ul class="navbar-nav me-5 pe-5 mb-2 mb-lg-0 ">
-            <li class="nav-item">
-              <a class="nav-link fs-5" href="#">Home</a>
-            </li>
+  <header>
+<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+  <div class="container">
+    <!-- Branding -->
+    <a class="navbar-brand" href="#">Bool Factory</a>
 
-            <li class="nav-item">
-              <a class="nav-link fs-5" href="#">Servizi</a>
-            </li>
+    <!-- Bottone menu hamburger -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <li class="nav-item">
-              <a class="nav-link fs-5" href="#">Contatti</a>
-            </li>
-            <!-- Qui c'era il menu dropdown, cancellato -->
-            <!-- Qui sotto il menu disabled, cancellato anche lui -->
-          </ul>
-          <!-- Qua ho cancellato form -->
-        </div>
-      </div>
-    </nav>
+    <!-- Contenitore collassabile -->
+    <div class="collapse navbar-collapse " id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Servizi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contatti</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
   </header>
 
   <main>
     <div class="container mt-4 mb-6">
-      <div class="row ">
-        <div class="col-lg-8 col-sm-12 ps-5">
-          <h1 >Richiesta preventivo</h1>
+      <div class="row pb-5">
+        <div class="col-lg-8 col-sm-12">
+          <h1>Richiesta preventivo</h1>
           <p class="fs-5">Compila il form per richiedere un preventivo per i nostri servizi di sviluppo.</p>
           <form id="user-form">
             <div class="col-12 mb-3">
@@ -68,7 +62,7 @@
             </div>
             <div class="col-12 mb-3">
               <label for="job-type" class="form-label">Tipo di lavoro</label>
-              <select  id="job-type" class="form-control">
+              <select id="job-type" class="form-control">
                 <option value="Scelta">Seleziona il tuo tipo di lavoro</option>
                 <option value="Back-Dev">Backed Development</option>
                 <option value="Front-End">Frontend Development</option>
@@ -97,10 +91,10 @@
             </div>
           </form>
         </div>
-        <div class="col-lg-4 col-sm-12 d-flex justify-content-center align-self-baseline">
-        
-          <div class="card" style="width: 20rem;">
-            <img src="./img/boolean.png" class="card-img-top" width = "300" height="200">
+        <div class="col-lg-4 col-sm-12 d-flex justify-content-center align-self-baseline justify-content-sm-center  ">
+
+          <div class="card flex-grow-1 ">
+            <img src="./img/boolean.png" class="card-img-top" height="200">
             <div class="card-body">
               <h5 class="card-title">Richiesta preventivo</h5>
               <p class="card-text">Se hai bisogno di aiuto puoi contattarci:</p>
@@ -120,7 +114,7 @@
 
   </main>
 
-  <footer class="bg-dark text-white d-flex justify-content-center align-items-center mt-1" style="height: 90px">
+  <footer class="bg-dark text-white d-flex justify-content-center align-items-center mt-5" style="height: 90px">
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
       <div class="container-fluid">
         <!-- Navbar brand -->
@@ -141,6 +135,7 @@
 
 
   <script src="./js/script.js"></script>
+  
 </body>
 
 </html>
